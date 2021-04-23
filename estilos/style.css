@@ -1,0 +1,1420 @@
+*{
+  padding:0px;
+  margin:0px;
+  border:0px;
+}
+
+
+
+:root{
+  
+  --tamanoDeTextos:1vw;
+}
+
+
+
+@media all and (max-width: 800px){ 
+  
+:root{
+  
+  --tamanoDeTextos:3vw;
+}
+}
+
+
+
+@media all and (min-width: 400px){ 
+  
+:root{
+  
+  //--tamanoDeTextos:12px;
+}
+}
+
+
+
+html{
+
+font-size:var(--tamanoDeTextos);
+
+text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*vvvvvvvvvvvvvvvvvvvvv*/
+
+
+
+  body{
+    
+    background:linear-gradient(to top, #ddd, #eee);
+  
+  display:flex;
+  justify-content:center;
+  
+  display:grid;
+  grid-template-columns:100vw;
+  grid-template-rows:repeat(10,auto);
+}
+
+
+
+  select{
+  
+  font-size:1.5rem;
+}
+
+
+
+.menu{
+  
+  font-size:2rem;
+}
+
+
+
+h1{
+  
+  font-size:3.5rem;
+  
+  color:#fff; 
+  
+  text-shadow:3px 3px 4px #555;
+  
+  margin:5px;
+}
+
+
+h3{
+  
+  font-size:2rem;
+  margin:5px;
+  
+  color:#fff;
+  text-shadow:3px 3px 4px #555;
+}
+
+
+
+.cajaDeTitulo{
+  
+  font-size:3rem;
+  text-shadow:3px 3px 8px #555;
+  color:#33b3f3;
+  
+  font-weight: bold;
+}
+
+
+.servicios{
+  
+  font-size:1.5rem;
+}
+
+
+
+.botonSolicitar{
+  
+  font-size:1.3rem;
+}
+
+
+
+.linckBotonSolicitar{
+  
+  color:#fff;
+  font-size:1.7rem;
+}
+
+
+
+.sobreMi{
+  
+  font-size:3rem;
+  
+  font-weight: bold;
+}
+
+
+h4{
+  
+  margin-top:10px;
+  
+  font-size:1.38rem;
+}
+
+
+
+.tecnologias{
+  
+}
+
+
+
+.portafolio{
+  
+  font-size:1.5rem;
+}
+
+
+
+.cuadrito:hover{
+  
+  box-shadow:2px 4px 3px #777;
+  
+  font-size:1.8rem;
+  
+  color:#3bf;
+}
+
+
+.pieDePagina{
+  
+  font-size:0.8rem;
+}
+
+
+
+
+a{
+  
+  text-decoration: none;
+  outline: none;
+  font-weight: bold;
+  color:#0ef;
+}
+
+
+
+
+
+
+/*bbbbbbbbbbb*/
+.cabecera{
+  
+  background:#00b0b0;
+  
+  height:5.5vh;
+  
+  display:flex;
+  align-items:center;
+  
+  overflow:hidden;
+}
+
+
+
+
+.botonIdioma{
+  
+  outline: none;
+  
+  border:0px;
+  border-bottom: 1px solid #ccc;
+  
+  margin-left:8px;
+  
+  background:#00c0c0;
+  border-radius: 10% 10% 35% 10%;
+  
+  color:#ccc;
+  
+  padding:3px;
+  
+  box-shadow: 3px 2px 4px #888;
+}
+
+
+
+.botonIdioma:active{
+  
+  box-shadow: 0px 1px 2px #555;
+
+  background:#00b0b0;
+}
+
+
+
+
+
+@media all and (min-width: 400px){
+  
+  .cabecera{
+    
+    padding:7px;
+  }
+  
+}
+
+
+
+
+
+
+/*==========================*/
+.menu{
+  
+  height:5vh;
+  //margin-bottom:2vh;
+
+  z-index: 80;
+  
+  opacity:0.8;
+  
+  position:sticky;
+  top:0px;
+  
+  display:flex;
+  
+  display:grid;
+  grid-template-columns:repeat(5, auto);
+}
+
+
+
+
+#mmenu{
+  
+margin-bottom:20px;
+}
+
+
+
+
+#menuEnMovil{
+
+padding-top:2vw;
+background:#00b0b0;
+opacity:0.7;
+}
+
+
+#botonMenu{
+  
+  margin-left:2vw;
+  width:35px;
+  height:25px;
+}
+
+
+hr{
+  
+  margin:4px;
+  z-index: 90;
+}
+
+
+#menuEmergente{
+  
+  color:#fff;
+  height:auto;
+  width:96vw;
+  background:#000;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
+  font-size:2.3rem;
+}
+
+
+#menConten{
+  
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
+  height:100vh;
+  width:100vw;
+  
+  background:#000;
+  
+  padding-left:7vw;
+  padding-right:7vw;
+  padding-top:7vh;
+  padding-bottom:7vh;
+  
+  display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(6, 10vh);
+}
+
+
+
+#menConten a:active{
+  
+  color:#f50;
+  font-size:3rem;
+  background:#000;
+}
+
+
+
+#menConten a:hover{
+  
+  font-size:3rem;
+  background:#000;
+}
+
+
+
+#salir{
+  
+  padding-bottom:63vh;
+  color:#f50;
+  font-size:4rem;
+  font-weight: bold;
+}
+
+
+
+
+
+
+.botonInicio, .botonSobreMi, .botonServicios, .botonPortafolio, .botonContactame{
+  
+  padding:6px;
+  
+  background:#00b0b0;
+  box-shadow:0px 4px 6px #888;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+
+
+
+.botonInicio:hover, .botonSobreMi:hover, .botonServicios:hover, .botonPortafolio:hover, .botonContactame:hover{
+  
+  background:#55b5b5;
+  box-shadow:0px 3px 2px #888
+}
+
+
+
+
+
+
+
+
+
+/*=======================*/
+.portada{
+  
+  border-top:1px solid #fff;
+  background: linear-gradient(to bottom, #fff, #efefef);
+  
+  image-rendering: pixelated;
+  background:url("img/portada.png");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+  
+  
+  box-shadow:-2px 4px 6px #888;
+  height:auto; //110vw;
+  width:auto; //100vw;
+  
+  margin-bottom:3vh;
+  padding-top:2vh;
+  padding-bottom:2vh;
+}
+
+
+.contenEnPortada{
+  
+  width:auto;
+  height:100%;
+}
+
+
+.cajaFotoPerfil{
+  
+  margin-top:4vh;
+  
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
+  width:auto;
+}
+
+
+
+@media all and (min-width: 600px){
+.cajaFotoPerfil{
+  
+  position:relative;
+  float:left;
+}
+
+.contenEnPortada{
+  
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+} 
+
+
+
+.fotoPerfil{
+  
+  border:2px solid #fff;
+  
+  box-shadow:6px 3px 5px #333;
+  
+  border-radius:50%;
+  height:40vh;
+  width:40vh;
+  
+  background:#000;
+  
+  image-rendering: pixelated;
+  background:url("img/perfil.png");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+
+
+.cajaDescripcion{
+  
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
+  width:auto;
+  height:auto;
+}
+
+
+.descripcion{
+  
+  text-align:center;
+}
+
+
+
+
+/*===========================*/
+.sobreMi{
+  
+  border-top:1px solid #fff;
+  background: linear-gradient(to bottom, #fff, #efefef);
+  box-shadow:2px 4px 6px #888;
+  height:auto;
+  width:auto;
+  margin-left:1.5vw;
+  margin-right:1.5vw;
+  margin-bottom:3vh;
+}
+
+
+.tituloEnSobreMi{
+  
+  border:0px;
+}
+
+
+.cajaDeTitulo{
+  
+  margin-top:5px;
+  margin-bottom:10px;
+  
+  background:#00b0b0;
+  border:0px;
+  box-shadow:0px 3px 6px #888;
+}
+
+
+.contenidoEnSobreMi{
+  
+  width:100%;
+  height:auto;
+  padding-bottom:10px;
+  padding-top:10px;
+  overflow:hidden;
+}
+
+
+.cajaFotoEnSobreMi{
+  
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
+  margin-bottom:10px;
+}
+
+
+
+
+
+.fotoEnSobreMi{
+  
+  height:50vw;
+  width:40vw;
+  
+  box-shadow:2px 3px 10px #888;
+  background:#000;
+  
+  image-rendering: pixelated;
+  background:url("img/sobreMi.png");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.cajaDescribcionSobreMi{
+  
+  box-shadow:0px 1px 10px #000;
+  
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+
+.describcionSobreMi{
+  
+ width:100%;
+  
+ text-align:left;
+ 
+ padding:20px;
+ 
+ word-wrap: break-word;
+}
+
+
+
+
+
+.tecnologias{
+  
+  margin-top:20px;
+}
+
+
+.tituloEnTecnologias{
+  
+  
+}
+
+
+.cajaDeTitulo{ }
+
+
+.contenedorDeBotones{
+  
+  padding-bottom:10px;
+  padding-top:10px;
+  
+  display: flex;
+  justify-content:space-around;
+  
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(22vw, auto));
+  grid-template-rows:repeat(auto-fit, minmax(32vw, auto));
+  
+  grid-auto-columns:minmax(22vw, auto);
+  grid-auto-rows:minmax(32vw, auto);
+  
+  grid-gap:15px;
+}
+
+
+
+
+
+.cuadrito{
+  
+  border:0px;
+  
+  margin:3px;
+  
+  height:auto;
+  width:auto;
+  font-size:0px;
+  
+  display:grid;
+  grid-template-columns:100%;
+  grid-template-rows:70% auto;
+
+  word-wrap: break-word;
+}
+
+
+
+
+
+
+
+.cojaBotonYNombre{ }
+
+
+.cajaBoton{
+  
+  display:flex;
+  justify-content:center;
+}
+
+
+.boton{
+  
+  background:#000;
+  
+  height:20vw;
+  width:20vw;
+  margin:5px;
+  border-radius:50%;
+  
+  border:3px solid #fff;
+  
+  box-shadow:2px 4px 6px #777;
+}
+
+
+.nombreBoton{ }
+
+
+.describcionDeBoton{ }
+
+
+
+span{
+  
+  position:absolute;
+  background:#f00;
+  display:none;
+}
+
+
+:target{
+   
+   display:block;
+}
+
+
+
+
+
+
+@media all and (min-width: 600px){
+.cajaFotoEnSobreMi{
+  
+  position:relative;
+  float:left;
+}
+}
+
+
+
+
+
+.bt1{
+  
+  image-rendering: pixelated;
+  background:url("img/tecnologias/1");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.bt2{
+  
+  image-rendering: pixelated;
+  background:url("img/tecnologias/2");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.bt3{
+  
+  image-rendering: pixelated;
+  background:url("img/tecnologias/3");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.bt4{
+  
+  image-rendering: pixelated;
+  background:url("img/tecnologias/4");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.bt5{
+  
+  image-rendering: pixelated;
+  background:url("img/tecnologias/5");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.bt6{
+  
+  image-rendering: pixelated;
+  background:url("img/tecnologias/6");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.bt7{
+  
+  image-rendering: pixelated;
+  background:url("img/tecnologias/7");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.bt8{
+  
+  image-rendering: pixelated;
+  background:url("img/tecnologias/8");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.bt9{
+  
+  image-rendering: pixelated;
+  background:url("img/tecnologias/9");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.bt10{
+  
+  image-rendering: pixelated;
+  background:url("img/tecnologias/10");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.bt11{
+  
+  image-rendering: pixelated;
+  background:url("img/tecnologias/11");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.bt12{
+  
+  image-rendering: pixelated;
+  background:url("img/tecnologias/12");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.bt13{
+  
+  image-rendering: pixelated;
+  background:url("img/tecnologias/13");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.bt14{
+  
+  image-rendering: pixelated;
+  background:url("img/tecnologias/14");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.bt15{
+  
+  image-rendering: pixelated;
+  background:url("img/tecnologias/15");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.bt16{
+  
+  image-rendering: pixelated;
+  background:url("img/tecnologias/16");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.bt17{
+  
+  image-rendering: pixelated;
+  background:url("img/tecnologias/17");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.bt18{
+  
+  image-rendering: pixelated;
+  background:url("img/tecnologias/18");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.bt19{
+  
+  image-rendering: pixelated;
+  background:url("img/tecnologias/19");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.bt20{
+  
+  image-rendering: pixelated;
+  background:url("img/tecnologias/20");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+/*===========================*/
+.servicios{
+  
+  border-top:1px solid #fff;
+  background: linear-gradient(to bottom, #fff, #efefef);
+  box-shadow:-2px 4px 6px #888;
+  height:auto;
+  width:97vw;
+  margin-left:1.5vw;
+  margin-right:1.5vw;
+  margin-bottom:3vh;
+}
+
+
+.tituloEnSevicios{
+  
+  //border: 1px solid #f00;
+}
+
+
+
+.contenServicios{
+  
+  margin-top:20px;
+  
+   display:flex;
+   justify-content:space-around;
+  
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(150px, 200px));
+    grid-template-rows:repeat(auto-fit, minmax(150px, 200px));
+  
+  
+    grid-auto-columns:200px;
+    grid-auto-rows:200px;
+  
+    grid-gap:25px;
+  
+    padding-bottom:30px;
+    
+    overflow:hidden;
+}
+
+
+
+.cuadritoDeServicios:hover{
+  
+  box-shadow:4px 3px 4px #666;
+  height:205px;
+  width:205px;
+}
+
+
+
+.cuadritoDeServicios{
+  
+  padding-bottom:10px;
+  
+  text-align:center;
+}
+
+
+
+.FotoSevicios{
+  
+  height:75%;
+  background:#990;
+}
+
+
+.nombreServicio{
+  
+  
+}
+
+
+.cajaBotonSolicitar{
+  
+  width:100%;
+  
+  display:flex;
+  justify-content:center;
+  
+  margin-top:3px;
+}
+
+
+.botonSolicitar{
+    
+    padding-left:4px;
+    padding-right:4px;
+    text-align:center;
+    border-radius:15%;
+    background:#00f;
+    display:block;
+    width:auto;
+    border-left:4px solid #00f;
+    border-right:4px solid #00f;
+    
+    box-shadow: 0 0 5px #666;
+    
+    animation: radial-pulse 1s infinite;
+}
+
+
+
+  @keyframes radial-pulse {
+   0% {
+    box-shadow: 0px 0px 0px 0px #888;
+   }
+   100% {
+    box-shadow: 0px 0px 0px 4px #eee;
+   }
+  }
+
+
+
+
+
+.f1{
+  
+  image-rendering: pixelated;
+  background:url("img/servicios/portafolio.png");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.f2{
+  
+  image-rendering: pixelated;
+  background:url("img/servicios/tienda.png");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+.f3{
+  
+  image-rendering: pixelated;
+  background:url("img/servicios/juego.png");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+.f4{
+  
+  image-rendering: pixelated;
+  background:url("img/servicios/block.png");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+.f5{
+  
+  image-rendering: pixelated;
+  background:url("img/servicios/negocio.png");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+.f6{
+  
+  image-rendering: pixelated;
+  background:url("img/servicios/base.png");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+.f7{
+  
+  image-rendering: pixelated;
+  background:url("img/servicios/foro.png");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+.f8{
+  
+  image-rendering: pixelated;
+  background:url("img/servicios/responsive.png");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+.f9{
+  
+  image-rendering: pixelated;
+  background:url("img/servicios/galeria.png");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+.f10{
+  
+  image-rendering: pixelated;
+  background:url("img/servicios/pribado.png");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+
+
+/*===========================*/
+.portafolio{
+  
+  border-top:1px solid #fff;
+  background: linear-gradient(to bottom, #fff, #efefef);
+  box-shadow:-2px 4px 6px #888;
+  height:auto;
+  width:97vw;
+  margin-left:1.5vw;
+  margin-right:1.5vw;
+  margin-bottom:3vh;
+}
+
+
+.tituloEnPortafolio{
+  
+  //border: 1px solid #f00;
+}
+
+
+
+.contenPortafolio{
+  
+  //border: 1px solid #f00;
+  
+  margin-top:20px;
+  
+   display:flex;
+   justify-content:space-around;
+  
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(150px, 200px));
+    grid-template-rows:repeat(auto-fit, minmax(150px, 200px));
+  
+  
+    grid-auto-columns:200px;
+    grid-auto-rows:200px;
+  
+    grid-gap:25px;
+  
+    padding-bottom:30px;
+    
+    overflow:hidden;
+}
+
+
+.cuadritoDePortafolio{
+  
+  //border: 1px solid #f70;
+}
+
+
+.FotoPortafolio{
+  
+  //border: 1px solid #f00;
+}
+
+
+.nombrePortafolio{
+  
+  //border: 1px solid #f00;
+}
+
+
+.botonVer{
+  
+  //border: 1px solid #f00;
+}
+
+
+
+
+.fp1{
+  
+  image-rendering: pixelated;
+  background:url("img/proyectos/reloj.png");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+ 
+
+
+
+
+/*===========================*/
+.contactame{
+  
+  border-top:1px solid #fff;
+  background: linear-gradient(to bottom, #fff, #efefef);
+  box-shadow:-2px 4px 6px #888;
+  height:auto;
+  width:97vw;
+  margin-left:1.5vw;
+  margin-right:1.5vw;
+  margin-bottom:3vh;
+}
+
+
+.tituloEnContactame{
+  
+  //border: 1px solid #f00;
+}
+
+
+
+.contenedorDeBotones{
+  
+  //border: 1px solid #f00;
+}
+
+
+.cuadrito{
+  
+  //border: 1px solid #f00;
+}
+
+
+.cojaBotonYNombre{
+  
+  //border: 1px solid #f00;
+}
+
+
+.cajaBoton{
+  
+  //border: 1px solid #f00;
+}
+
+
+.boton{
+  
+  //border: 1px solid #f00;
+}
+
+
+.nombreBoton{
+  
+  //border: 1px solid #f00;
+}
+
+
+.describcionDeBoton{
+  
+  //border: 1px solid #f00;
+}
+
+
+
+
+.c1{
+  
+  image-rendering: pixelated;
+  background:url("img/contacto/1");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+.c2{
+  
+  image-rendering: pixelated;
+  background:url("img/contacto/2");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+.c3{
+  
+  image-rendering: pixelated;
+  background:url("img/contacto/3");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+.c4{
+  
+  image-rendering: pixelated;
+  background:url("img/contacto/4");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+.c5{
+  
+  image-rendering: pixelated;
+  background:url("img/contacto/5");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+
+.c6{
+  
+  image-rendering: pixelated;
+  background:url("img/contacto/6");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+
+/*===========================*/
+.pieDePagina{
+  
+  display:flex;
+  justify-content:center;
+  
+  border-top:1px solid #fff;
+  background: #000;
+  height:auto;
+  width:100vw;
+  
+  color:#777;
+}
+
+
+.contenTextoPie{
+  
+  padding:3%;
+}

@@ -1,0 +1,96 @@
+<html> 
+<head> 
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color" content="#00b0b0" />
+
+
+<link rel="stylesheet" href="estilos/relojStyle.css">
+
+</head>
+<body id="cuerpo"> 
+
+
+
+
+<span id = "alerta"> 
+
+por favor 
+aga click para iniciar
+</span>
+
+
+
+<div id ="contenedorE1"> 
+
+
+<span id = "active" class="pest"> 
+ <div id="reloj"> 
+ 00:00:00 AM <br>
+ <h1> lun 4 agos 2021 </h1> 
+ </div> 
+</span>
+
+<span id = "none" class="pest"> 
+ alarma
+</span>
+
+<span id = "none" class="pest"> 
+  <div id="temporisador"> 
+ 00:00:00
+ </div> 
+</span>
+
+<span id = "none" class="pest"> 
+  
+ <div>
+   <div id="cronometro"> 
+ 0:0:0
+   </div> 
+
+  <div id ="cajaCronoBoton">
+   <div id="cronoBoton" onclick="iniciarCrono()"> 
+   Iniciar
+   </div>
+  </div>
+   
+ </div>
+</span>
+
+
+
+
+<div id ="pie"> 
+
+  <div id="contBotonReloj" onclick="cambio(1)"> 
+reloj
+  </div>
+  
+  <div id="contBotonAtarma" onclick="cambio(2)">
+alarma
+  </div>
+  
+  <div id="contBotonTemporizador" onclick="cambio(3)"> 
+temporisador
+  </div>
+  
+  <div id="contBotonCronometro" onclick="cambio(4)"> 
+cronometro
+  </div>
+  
+  <div id="contBotonSalir" onclick="cambio(5)"> 
+salir
+  </div>
+  
+  
+  
+ </div>
+</div>
+
+
+
+
+<script src="control/reloj.js"> </script>
+</body>
+</html>
