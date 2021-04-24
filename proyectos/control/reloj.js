@@ -1,39 +1,10 @@
 
-   var spanAlerta = document.getElementById("alerta");
-  
-   var element = document.getElementById("cuerpo");
-   
-   var relojContenedor = document.getElementById("contenedorE1");
+     
+   var relojContenedor = document.getElementById("contenedor");
    
    
    
-   
-function iniciar(){
-  
-  
-   spanAlerta.id= "desactivarAlerta";
-   
-relojContenedor.id = "contenedorE100"
-   
-   
- 
-  if(element.requestFullscreen) {
-      element.requestFullscreen();
-    } else if(element.mozRequestFullScreen) {
-      element.mozRequestFullScreen();
-    } else if(element.webkitRequestFullscreen) {
-      element.webkitRequestFullscreen();
-    } else if(element.msRequestFullscreen) {
-      element.msRequestFullscreen();
-    }
-
-
-setInterval(inyectarHora, 10)
-}
-
-
-
-window.addEventListener("click", iniciar, false);
+   setInterval(inyectarHora, 10)
 
 
 
@@ -47,11 +18,20 @@ document.getElementsByClassName("pest")[1].id ="none";
 
 document.getElementsByClassName("pest")[2].id ="none";
 
-document.getElementsByClassName("pest")[3].id ="none";
 
+document.getElementsByClassName("pest")[val-1].id ="active";
 
-document.getElementsByClassName("pest")[val-1].id ="active"
 }
+
+
+
+
+function salir(){
+     alert("s")
+window.close();
+alert("ns")
+}
+
 
 
 
